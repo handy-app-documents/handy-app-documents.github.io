@@ -1,0 +1,10 @@
+{
+    "com.guoxiang.WordRecite" : {
+        "iOS":"2.16", 
+        "macOS":"2.16"
+    },
+    "com.guoxiang.KeepAccounts":{
+        "iOS":"1.10", 
+        "macOS":"1.10"
+    }
+}
