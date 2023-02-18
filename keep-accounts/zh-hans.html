@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/a.css" />
+  <title>使用说明</title>
+  <script type="text/javascript" src="/version.js"></script>
+</head>
+
+<body>
+  <table border=1 width="100%">
+    <tr>
+      <td>
+        教学视频
+      </td>
+      <td>
+        <p><a href="https://space.bilibili.com/2117710829" target="_blank">B站</a></p>
+      </td>
+      <td>
+        <p><a href="https://www.youtube.com/channel/UCfxizZY3Ogiy9e2Cy4tuSlQ" target="_blank">YouTube</a></p>
+      </td>
+    </tr>
+  </table>
+  <table width="100%">
+    <tr>
+      <td width="60%">
+        <h1>使用说明 (v<span id="KeepAccounts"></span>)</h1>
+      </td>
+      <td width="20%"><a href="/zh-hant/index.html">繁體中文</a></td>
+      <td width="20%"><a href="/en/index.html">English</a></td>
+    </tr>
+  </table>
+  <!-- TRANSLATE START -->
+  <h2>1. 账目分类和子分类</h2>
+  系统将账目记录划分为：分类 -> 子分类 -> 记录 三级管理。每条记录隶属于一个子分类，每个子分类隶属于一个分类。
+  您可以进入"分类"标签页对分类进行管理。
+  首次使用时,可以点击右上角<img class="symbol" src="/sf/ellipsis.circle.png" />菜单中的"导入内置分类列表"，系统会自动添加一组分类和子分类。您可以自行调整这些分类以适应您的需求。
+  <p>注意：</p>
+  <ul>
+    <li>添加子分类时，需要选择“收入”或“支出”类型。收入子分类中的记录全部为收入记录，支出子分类同理。</li>
+    <li>长按分类或子分类名称，在弹出菜单中可以选择
+      <span class="button">"编辑"</span>或<span class="button">"删除"</span>分类或子分类。注意删除后，其下的子分类和记录都会被删除。
+    </li>
+  </ul>
+  <h2>2. 记账</h2>
+  <p>进入"分类"标签页,点击一个子分类或进入"记录"标签页，点击<span class="button">"+支出/收入"</span>按钮。
+    在弹出的窗口中填入相应信息后点击右上角的<span class="button">"添加"</span>。有如下信息可以输入：</p>
+  <table border=1 width=100%>
+    <tr>
+      <td width=100>字段</td>
+      <td>注意</td>
+    </tr>
+    <tr>
+      <td>金额</td>
+      <td style="text-align: start">可以输入+、-、*进行简单运算。
+      </td>
+    </tr>
+    <tr>
+      <td>商家</td>
+      <td style="text-align: start">
+        点击商家右侧的<img class="symbol" src="/sf/ellipsis.circle.png" />按钮可以显示之前在相同子分类下记录过的商家列表。
+      </td>
+    </tr>
+
+    <tr>
+      <td>标签</td>
+      <td style="text-align: start">
+        用在"设置">"高级"页中定义的标签标记记录，之后可以在“图表”页查看不同标签下的数据汇总。
+      </td>
+    </tr>
+    <tr>
+      <td>支付方式</td>
+      <td style="text-align: start">
+        选择在"设置">"高级"页中定义的支付方式，之后可以在“图表”页查看不同支付方式下的数据汇总。记录将使用此支付方式的货币。
+      </td>
+    </tr>
+    <tr>
+      <td>日期</td>
+      <td style="text-align: start">
+        点击右侧箭头，在展开的内容中填入信息。
+      </td>
+    </tr>
+    <tr>
+      <td>详情</td>
+      <td style="text-align: start">
+        点击添加记录对话框上方的“详情”页,填入记录的详细信息。
+      </td>
+    </tr>
+    <tr>
+      <td>图像</td>
+      <td style="text-align: start">
+        点击添加记录对话框上方的“图像”页。
+        <p>
+          如果有账目相关的图片可以记录（如拍下消费收据或发票的图片），点击页面下方的<span class="button">"拍照"</span>或<span class="button">"图库"</span>。也可以直接将图片从其他APP拖放到此处或<span
+            class="button">"+支出/收入"</span>按钮。
+        <p>用手指在图片上滑动会显示一个绿色边框的方块， 点击下方的<span class="button">"剪切"</span>按钮可以剪切并放大方块内的图像。
+        </p>
+        <p>点击<span class="button">“分析”</span>，系统会识别绿色边框内的图片（未选择则分析整个图片）中包含的金额、日期、商家等信息并提示用户选择填入,并自动推荐三个分类供选择。
+ 
+      </td>
+    </tr>    
+    <tr>
+      <td>连续添加</td>
+      <td style="text-align: start">
+        选中后点击<span class="button">"添加"</span>不会关闭窗口，以便添加下一笔记录。添加分类、标签、自动记录模版时也可以同样操作。
+      </td>
+    </tr>
+  </table>
+
+  <p>注意：</p>
+  <ul>
+    <li>商家信息必须在之前的记录中出现过，且在图片文字中出现才可以自动识别。</li>
+    <li>建议选择图片中的相关区域后再分析，以提高准确度。</li>
+    <li><span class="button">“分析”</span>中的分类推荐是根据以往记录中的详情、商家、附带图片中的文字进行统计得到，如果这些信息比较少，则推荐可能不准确</li>
+  </ul>
+  <h2>3. 记录</h2>
+  进入"分类"标签页并进入某个子分类，或进入"记录"标签页可以查看每一天的收支记录，以及当月和当年的总收入和总支出。
+  可以点击上方的日期并在弹出菜单中选择不同的日期进行汇总。
+  <p>注意：</p>
+  <ul>
+    <li>日期弹出菜单只会包含有记录的日期。</li>
+    <li>可以选择菜单中的"全部",以显示整年（仅在分类标签页有效）或整月的记录。</li>
+    <li>点击记录以显示更多信息，点击上方图片标签查看记录图片。</li>
+    <li>长按记录，在弹出菜单中可以选择
+      <span class="button">"编辑"</span>或<span class="button">"删除"</span>记录。
+    </li>
+    <li>可以批量删除、标记（见第5节标签管理）或移动记录到其他子分类。方法是点击右上角的<span
+        class="button">"编辑"</span>。选好要移动的记录后，点击下方相应按钮。完成后点击右上角的“完成”，结束编辑状态。</li>
+    <li>进入"分类"标签页,点击"数据回收"。这里列出了已经删除但还没有用iCloud同步的记录，
+      选择记录并点击下方<span class="button">"还原"</span>，就可以还原被删除记录。
+      如果记录的子分类已被删除，可以点击下方<span class="button">"还原并移动"</span>还原到其他子分类。</li>
+    <li>进入"分类"标签页,点击“查找记录”。可以在这里搜索记录的详情、商家或记录图片中的文字中包含特定关键字的记录。
+      点击右上角的<span class="button">"编辑"</span>可以批量删除、标记或移动记录到其他子分类。</li>
+  </ul>
+  <h2>4. 图表</h2>
+  进入"图表"标签页可以按记录的不同字段使用图表进行汇总统计。如按年汇总统计，每一年再按月进行汇总统计等等。
+  点击汇总方式和顺序下的<span class="button">"编辑"</span>，可以选择汇总方式，拖动右侧的<img class="symbol"
+    src="/sf/list.bullet.png" />以调整顺序。包含如下汇总方式：
+  <ul>
+    <li>按标签汇总</li>
+    <li>按支付方式汇总</li>
+    <li>按年汇总</li>
+    <li>按月汇总</li>
+    <li>按日汇总</li>
+    <li>按分类汇总</li>
+    <li>按子分类汇总</li>
+    <li>按商家汇总</li>
+  </ul>
+  进入某一汇总页面后，点击右上角的<img class="symbol" src="/sf/house.fill.png" />可以返回起始页。
+  点击右上角的<img class="symbol" src="/sf/star.png" />可以将当前页面加入快速访问。之后回到起始页可以看到已添加的快速访问页面，点击后可以直接访问相关页面，
+  再次点击<img class="symbol" src="/sf/star.fill.png" />后快速访问将被删除。
+  如果当前访问页面的路径上包含年月日或年月或仅包含年字段，且与当前时间相同，添加到快速访问时会提示“是否始终保持访问路径上的日期为最新？”，
+  如果选择是，添加的快速访问路径上的日期将始终保持为当前日期。
+  例如，当前日期为2021年7月某天，对2021年7月的购物支出的汇总，添加到快速访问后，会显示为本月购物支出，进入8月后点击快速访问链接会自动进入8月的购物支出的汇总。
+
+
+  <h2>5. 设置</h2>
+  <p>点击应用下方的<span class="button">“设置”</span>，可以看到以下按钮和功能</p>
+  <table border=1>
+    <tr>
+      <td width='100'>
+        升级软件<br />(无限制使用）
+      </td>
+      <td style="text-align: start">
+        点击<span class="button">"以XX价格购买本软件"</span>，成功购买后会显示<font color="#28e628">“已购买”</font>。
+        <p>注意:<br />
+          购买之后如果重新安装了本应用或在其他设备安装了本应用，需要点击<span class="button">"恢复购买"</span>。</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        同步iCloud
+      </td>
+      <td style="text-align: start">
+        将单词数据同步到iCloud，避免数据丢失，也可以利用iCloud将数据同步到多个设备上（每个设备需要登录到同一iCloud账户）。
+        同步时会自动检测本地的更改并上传到iCloud，同时下载iCloud上的更新到本地。
+        如果本地和iCloud上数据在相同字段都有更新，则以本地更新优先。</td>
+    </tr>
+    <tr>
+      <td>
+        自动同步
+      </td style="text-align: start">
+      <td style="text-align: start">选中后，系统会每隔2分钟自动同步iCloud。</td>
+    </tr>
+    <tr>
+      <td>
+        进行身份验证
+      </td style="text-align: start">
+      <td style="text-align: start">选中后，每次进入应用后会使用FaceID、TouchID或密码验证身份。</td>
+    </tr>
+    <tr>
+      <td>
+        导出到文件
+      </td>
+      <td style="text-align: start">导出分类和记录数据到CSV文件。注意：不会导出记录中的图像数据。</td>
+    </tr>
+    <tr>
+      <td>
+        从文件导入
+      </td>
+      <td style="text-align: start">从CSV文件导入分类和记录数据，导入时会忽略CSV文件中本地已存在的记录。</td>
+    </tr>
+    <tr>
+      <td>周期记账模版</td>
+      <td style="text-align: start">添加每月自动记录（如每月31日支出iCloud服务费X元）。
+        如果当月不含有此日期，则自动记录在最后一日（如2月不含31日，则自动记录在最后的28或29日）。</td>
+    </tr>
+    <tr>
+      <td>标签管理</td>
+      <td style="text-align: start">添加自定义标签。添加后，在添加记录时就可以选择这个标签来标记记录。</td>
+    </tr>
+    <tr>
+      <td>支付方式管理</td>
+      <td style="text-align: start">添加支付方式。如果需要使用非缺省货币进行记录，需要首先定义此货币的支付方式，并在添加记录时选择这个支付方式进行记录。</td>
+    </tr>
+    <tr>
+      <td>
+        问题与反馈
+      </td>
+      <td style="text-align: start">
+        APP使用中遇到任何问题或有任何建议，可以使用<span class="button">问题咨询</span>或<span class="button">邮件反馈</span>咨询或建议。
+        如果没有打开应用的通知权限，进入界面后会提示，点击“确定”进行设置，以便及时接收问题回复通知。
+      </td>
+    </tr>      
+  </table>
+  <h2>6. 导入/导出文件格式</h2>
+
+  <p>导入/导出CSV文件中每一行包含一个分类、子分类、标签或记录的数据,各字段用逗号分隔。字段中如果有逗号或回车用\，(全角逗号)与\n表示。</p>
+  分类包含以下字段：
+  <ol>
+    <li>0</li>
+    <li>分类ID，任意可唯一标识分类的字符串</li>
+    <li>分类名称</li>
+  </ol>
+  子分类包含以下字段：
+  <ol>
+    <li>1</li>
+    <li>子分类ID，任意可唯一标识分类的字符串</li>
+    <li>子分类名称</li>
+    <li>上级分类ID</li>
+    <li>true -- 收入子分类， false -- 支出子分类</li>
+  </ol>
+  记录包含以下字段：
+  <ol>
+    <li>2</li>
+    <li>记录ID，任意可唯一标识记录的字符串</li>
+    <li>上级子分类ID</li>
+    <li>记录日期(年-月-日 时:分)，如2022-01-12 05:15</li>
+    <li>金额， 如100.00</li>
+    <li>0</li>
+    <li>商家</li>
+    <li>详情</li>
+    <li>标签ID</li>
+  </ol>
+  标签包含以下字段：
+  <ol>
+    <li>3</li>
+    <li>标签ID，任意可唯一标识标签的字符串</li>
+    <li>标签名称</li>
+    <li>标签颜色：颜色的RGB数值，范围在0-1之间，用|分割， 如"0.5|0|0.5"</li>
+  </ol>
+  支付方式包含以下字段：
+  <ol>
+    <li>4</li>
+    <li>支付方式ID，任意可唯一标识的字符串</li>
+    <li>支付方式名称</li>
+    <li>货币：如"CNY"</li>
+  </ol>
+  <!-- TRANSLATE END -->
+</body>
+
+</html>

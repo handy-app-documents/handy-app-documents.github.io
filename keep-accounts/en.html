@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/a.css" />
+  <title>User Manual</title>
+  <script type="text/javascript" src="/version.js"></script>
+</head>
+
+
+<body>
+  <table border=1 width="100%">
+    <tr>
+      <td>
+        Demo
+      </td>
+  
+      <td>
+        <p><a href="https://www.youtube.com/channel/UCfxizZY3Ogiy9e2Cy4tuSlQ" target="_blank">YouTube</a></p>
+      </td>
+    </tr>
+  </table>
+  <table width="100%">
+    <tr>
+      <td width="60%">
+        <h1>User Manual (v<span id="KeepAccounts"></span>)</h1>
+      </td>
+      <td width="20%"><a href="/zh-hans/index.html">简体中文</a></td>
+      <td width="20%"><a href="/zh-hant/index.html">繁體中文</a></td>
+    </tr>
+  </table>
+  <h2>1. Category and Subcategory</h2>
+  This application groups account records into subcategories, and group subcategories into categores.
+  After click <img class="symbol" src="/sf/ellipsis.circle.png" /> in the upper-right corner, then click <span class="button">"Import built-in category list"</span> , a set of categories and subcategories will be generated.
+  You can add/delete/modify these categories and subcategories for your requirement in "Category" tab.
+  <p>Notice:</p>
+  <ul>
+    <li>When adding subcategory, the subcategory can be created as an incoming subcategory which only contains incoming records,
+      or an expense subcategory which only contains expense records.
+    <li>To edit/delete a category/subcategory, long press the name of the category, select 'Edit' or 'Delete' in the popup menu.
+    </li>
+  </ul>
+  <h2>2. Expense/incoming tracking</h2>
+  <p>Enter 'Category' tab, click one subcategory or enter 'Records' tab, then click <span class="button">"+Expense"</span> or <span class="button">"+Incoming"</span> button,
+  fill information of the new record, click <span class="button">"Add"</span> in the upper right corner.
+  </p>
+  <table border=1 width=100%>
+    <tr><td width=100>Fields</td><td>Notes</td></tr>
+    <tr><td>Amount</td><td style="text-align: start">
+    You can input +,-,* to do simple calulation in amount input field.
+    </td></tr>
+    <tr><td>Merchant</td><td style="text-align: start">
+      You can select from merchants previously recorded in same subcategory by clicking <img class="symbol" src="/sf/ellipsis.circle.png" />  button next to merchant input field.
+    </td></tr>
+    <tr><td>Label</td><td style="text-align: start">
+      Mark record with a label defined in "Settings"/"Label Management" page.
+      The summary of different labels can be viewed at "Chart" tab.
+    </td></tr>
+    <tr><td>Payment</td><td style="text-align: start">
+      Select a payment method defined in "Settings/Payment Management" page. The record will use the payment's currency.
+      The summary of different payments can be viewed at "Chart" tab.
+    </td></tr>
+    <tr><td>Date</td><td style="text-align: start">
+      Click right arrow button, fill information in expanded view.
+    </td></tr>
+    <tr><td>Detail</td><td style="text-align: start">
+      Click "Detail" tab and fill the information。
+    </td></tr>
+    <tr><td>Image</td><td style="text-align: start">
+      Click "Image" tab, you can attach a image with the record(For example, add an image of receipt or invoice).
+      You can also add an image by dragging it from other app to the Image tab or <span class="button">"+ Expense/Incoming"</span> button.
+      
+      <p>You can use your finger to drag a green rectangle to select a region of the image</p>
+      <p>Following action can be done by clicking the buttons in the bottom of the tab.</p>  
+      <ul>
+        <li>Photos: add image from Photos app</li>
+        <li>Camera: add image by taking a picture using camera</li>
+        <li>Crop:  crop the selected region out of image</li>
+        <li>Analyse: list of money amount, date, merchants will be prompt in a new window if there is any contained in selected image region(or the whole image if no selection).
+          Three categories will also be prompt for selection.</li>
+        <li>Clear: Remove the image</li>
+      </ul>
+    </td></tr>    
+    <tr><td>Continuous add</td><td style="text-align: start">
+      The dialog will not be closed after clicking <span class="button">"Add"</span>,so that you can add next record.
+      This is also supported in label, category and periodic record template adding dailog。
+    </td></tr>
+  </table>
+
+  <p>
+      <p>Notice：</p>
+      <ul>
+        <li>The merchants information can only be recongnized when there is at least one previous record contains the information.</li>
+        <li>It is better to select relavent region before click "Analyse" to improve accuracy</li>
+        <li>The suggested categories in <span class="button">“Analyse”</span> is based on existing record's details, merchants and text in attached images.
+          If there are too few of these information, the suggestion may not be accurate.</li>
+      </ul>
+
+</p>
+
+  <h2>3. Records</h2>
+  Enter 'Category' tab, click one subcategory or enter 'Records' tab, here you can view all the records in a particular day. The total expense and income of the whole year and month will also be shown.
+  Click the year, month and day text on the top will pop up menu to switch displaying date.
+  <p>Notice:</p>
+  <ul>
+    <li>The popup menu for switching date will only contain date which has records.</li>
+    <li>You can select "All" to show records of the whole year or month.</li>
+    <li>You can click the record to view more information, you can view the attached image in image tab.</li>
+    <li>You can edit/delete record by long pressing(mouse right click in MacOS) the record.</li>
+    <li>You can click <span class="button">"Edit"</span> button in the upper-right corner then select some records and click <span class="button">"Move"</span>
+      to move records to other subcategory, or click  <span class="button">"Label"</span> to label them (reference Label Management in section 5) 
+      or click  <span class="button">"Delete"</span> to delete them.
+
+      Click <span class="button">"Done"</span> button in the upper-right corner to finish edit state.
+    </li>
+    <li>In "Category" tab, click "Data Recycle". Here, you can view records deleted but not synchronized with iCloud.
+      To restore the records, select records which need to be restored and click <span class="button">"Restore"</span> 
+      or click <span class="button">"Restore and Move"</span> if the record's subcategory does not exists.</li>
+    <li>In "Category" tab, click "Search records". Here, you can search records which detail, merchant or text in attached image contains certain keyword.
+      You can move, lable or delete records by clicking <span class="button">"Edit"</span> button in the upper-right corner and click corresponding button in the bottom.
+    </li>
+  </ul>
+  <h2>4. Chart</h2>
+  In "Chart" tab, you can view statistic on the records by different angle. For example, show total sum of the records for each year,
+  then in each year, show total sum of the records for each month.
+
+  You can change the summary fields by click <span class="button">Edit</span> in "summary method and order" section. Dragging <img class="symbol" src="/sf/list.bullet.png" /> in
+  the right of the summary method to change the order. Following summary methods are supported:
+  <ul>
+    <li>Summary By Label</li>
+    <li>Summary By Payment</li>
+    <li>Yearly Summary</li>
+    <li>Monthly Summary</li>
+    <li>Daily Summary</li>
+    <li>Summary By Category</li>
+    <li>Summary By Subcategory</li>
+    <li>Summary By Merchant</li>
+  </ul>
+  After entering a summary page, click <img class="symbol" src="/sf/house.fill.png" /> in the upper right corner to return back to home summary page.
+  Click <img class="symbol" src="/sf/star.png" /> to add this page to quick access pages. Added quick access links will be listed under home summary page.
+  When clicking the quick access link, related page will be accessed, click <img class="symbol" src="/sf/star.fill.png" /> will remove the quick access link.
+  If the access path of current summarize page contains year\month\day or year\month or year only  and these fields's value are same with current date. This app will
+  prompt "Do you want to keep the date on access path always uptodate?" when adding this page to quick access.
+  If selecting 'Yes', the date of the quick access link will always be current date.
+  For example, if current date is 2021/7/1, when adding summarize page of Food category in 2021/7 to quick access.
+  When entering Augest of 2021, the link will point to 2021/8's summarize page.
+
+  <h2>5. Settings</h2>
+  <p>Enter the <span class="button">“Settings”</span> tab, here you can use following functions and settings.</p>
+  <table border=1>
+    <tr>
+      <td width='150'>
+        Upgrade App<br />(unrestricted use)
+      </td>
+      <td style="text-align: start">
+        Click<span class="button">"Upgrade App at price XXX"</span> to pay and upgrade the app.
+        After upgrade, text <font color="#28e628">“Purchased”</font> will replace the upgrade button.
+        <p>Notice:<br />
+          If you reinstalled the app, or installed the app on another device after upgrading,
+          you can click <span class="button">"Restore Purchase"</span> to restore purchase state.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Sync iCloud
+      </td>
+      <td style="text-align: start">
+        To avoid data lost, click this button to sync categories, subcategories and records to iCloud, 
+        or synchronize data between different devices(each device must login to same icloud account).
+        The local updates will be uploaded to iCloud, and the remote changes will be downloaded to local device.
+        Note that if you have updates on same field of the same category or subcategory or record from both local and iCloud, the local update will overwrite iCloud update.</td>
+    </tr>
+    <tr>
+      <td>
+        Auto-Sync
+      </td>
+      <td style="text-align: start">Automatically synchronize iCloud every 2 minutes.</td>
+    </tr>
+    <tr>
+      <td>
+        Owner authenticate
+      </td>
+      <td style="text-align: start">Authenticate using FaceID, TouchID or Password after entering the app to protected your privacy.</td>
+    </tr>
+    <tr>
+      <td>
+        Export to file
+      </td>
+      <td>Export categories, subcategories and records data to CSV file.
+        Note that image data in records will be ignored.</td>
+    </tr>
+    <tr>
+      <td>
+        Import from file
+      </td>
+      <td style="text-align: start">Import categories, subcategories and records data from CSV file.
+        Note that only data in CSV file that does not exists in local device will be imported.</td>
+    </tr>
+  <tr>
+    <td>Auto-insert template</td>
+    <td>You can config the app to add record automatically in a specific day of each month
+      (For example, add X dollar expense at day 31 of each month for iCloud monthly service fee).
+      If a date is not valid in certain month, the auto-created record will be set for the last day of the month.
+      (February does not have day 31, so the new record date will be set to 29 February or 28 February)
+  </td>
+  </tr>
+  <tr>
+    <td>Label Management</td>
+    <td>Add self defined label, you can mark each record with one of labels you defined. The summary of different labels can be viewed at "Chart" tab.</td>
+  </tr>
+  <tr>
+    <td>Payment Management</td>
+    <td>Add payment, you need to define a payment if you want to add record with non-default currency. The summary of different payments can be viewed at "Chart" tab.</td>
+  </tr>
+  <tr>
+    <td>Question and Feedback</td>
+    <td>If you have any question or suggestion about the app, you can click <span class="button">"Questions"</span>. If notification privilege for this app is not enabled, app will display a dialog when enter the feedback page.
+      Click 'Yes' to enable to the privilege to receive reply notification.
+    </td>
+  </tr>  
+  </table>
+  <h2>6. Import/Export cvs file format</h2>
+
+  <p>Each line in imported/exported cvs file contains data of one category, subcategory, label or record, seperated by comma.
+    If there is a comma or change line in the field, use \, (full-width comma) and \n.
+  </p>
+  Category contains following fields:
+  <ol>
+    <li>0</li>
+    <li>Category id, any string that can uniquely identify the category.</li>
+    <li>Category name</li>
+  </ol>
+  Subcategory contains following fields:
+  <ol>
+    <li>1</li>
+    <li>Subcategory id, any string that can uniquely identify the subcategory.</li>
+    <li>Subcategory name</li>
+    <li>Parent category id</li>
+    <li>true -- incoming subcategory, false -- Expense subcategory</li>
+  </ol>
+  Record contains following fields:
+  <ol>
+    <li>2</li>
+    <li>Record id, any string that can uniquely identify the record.</li>
+    <li>Parent subcategory id</li>
+    <li>Eecord date(year-month-day hour:minute), ex. 2022-01-12 05:15</li>
+    <li>Amount, ex. 100.00</li>
+    <li>0</li>
+    <li>Merchant</li>
+    <li>Detail</li>
+    <li>Label id</li>
+  </ol>
+  Label contains following fields:
+  <ol>
+    <li>3</li>
+    <li>Label id，any string that can uniquely identify the label.</li>
+    <li>Label name</li>
+    <li>Label color：RGB color value ranged from 0 to 1, seperated by |， ex. "0.5|0|0.5"</li>
+  </ol>
+  Payment contains following fields:
+  <ol>
+    <li>4</li>
+    <li>Payment id，any string that can uniquely identify the payment.</li>
+    <li>Payment name</li>
+    <li>Payment currency：ex. "USD"</li>
+  </ol>
+
+</body>
+
+</html>
