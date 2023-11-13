@@ -1,14 +1,14 @@
 {
     "com.guoxiang.WordRecite" : {
-        "iOS":"2.25",
-        "macOS":"2.25"
+        "iOS":"2.29",
+        "macOS":"2.29"
     },
     "com.guoxiang.KeepAccounts":{
-        "iOS":"1.29", 
-        "macOS":"1.29"
+        "iOS":"1.31", 
+        "macOS":"1.31"
     },
     "com.guoxiang.JourneyTracker":{
-        "iOS":"1.08", 
+        "iOS":"1.10", 
         "macOS":"0"
     }
 }
