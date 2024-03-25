@@ -1,5 +1,5 @@
 {
-	"api-version": "2024-02-15-preview",
+	"apiVersion": "2024-02-15-preview",
 	"resource" : "word-recite",
 	"deployment" : "speech2text"
 }
